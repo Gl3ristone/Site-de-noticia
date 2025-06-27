@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Atividade</title>
+  <style>
+    * {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: grid;
+      grid-template-rows: 1fr 6fr 1fr;
+      grid-template-columns: 0.8fr 2fr;
+      grid-template-areas:
+        "h h"
+        "a m"
+        "f f";
+    }
+
+    header {
+      background-color: black;
+      grid-area: h;
+      color: blueviolet;
+      display: flex;
+      align-items: center;
+      padding-left: 25px;
+    }
+
+    aside {
+      background-color: rgb(170, 1, 147);
+      grid-area: a;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      gap: 15px;
+    }
+
+    aside input[type="email"] {
+      padding: 10px;
+      width: 100%;
+      border: none;
+      border-radius: 4px;
+    }
+
+    aside button {
+      padding: 10px;
+      width: 100%;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    main {
+      background-color: rgb(250, 239, 239);
+      grid-area: m;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+
+    article {
+      background-color: rgb(121, 121, 121);
+      display: flex;
+      align-items: center;
+      transition: all 0.5s ease;
+      width: 100%;
+      height: auto;
+      border-radius: 3%;
+    }
+
+    article:hover {
+      background-color: #57caff;
+      box-shadow: 10px 10px 5px black;
+      transform: scale(1.05);
+    }
+
+    .img-container {
+      height: 100%;
+      width: 75%;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      font-size: small;
+      color: white;
+      padding: 0 10px;
+    }
+
+    footer {
+      background-color: rgb(153, 0, 255);
+      grid-area: f;
+      text-align: center;
+      color: white;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>MAIFIA NOTÍCIAS</h1>
+  </header>
+
+  <aside>
+    <h2>MAIFIA NOTÍCIAS</h2>
+    <p>Tudo que você precisa saber sobre essa organização IFPE</p>
+    <input type="email" placeholder="Seu e-mail">
+    <button>Enviar</button>
+  </aside>
+
+  <main>
+    <article>
+      <div class="img-container">
+        <img src="https://a.storyblok.com/f/178900/1920x1080/ab7a8d0a63/the-fragrant-flower-blooms-with-dignity.png/m/1200x0/filters:quality(95)format(webp)" alt="" style="margin: 0%;">
+        <img src="https://geekpedia.pl/wp-content/uploads/2024/03/call_of_the_night_Yofukashi_no_Uta_anime_komedia_romans_1.webp" alt="">
+      </div>
+      <h2>Previsão: João Guilherme e Davi Gleristone não irão para a escola no mês de Julho para ver anime de romance (Prioridades)</h2>
+    </article>
+
+    <article>
+      <div class="img-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjoARW7C2ZTFv6Lo8c-52fZmyCh_qSFmnCSA&s" alt="">
+      </div>
+      <h2>Matheus Henrique/Luana tem mais faltas do que presenças de todos os alunos juntos.</h2>
+    </article>
+
+    <article>
+      <div class="img-container">
+        <img src="https://pm1.aminoapps.com/6522/f28d09cdbc25e489c64fdcb752e0b9dfe416dd5d_00.jpg" alt="">
+      </div>
+      <h2>Torneio de monotype do maifia no Pokemon Showdown, valendo um PC gamer da sua escolha (é verdade esse bilhete)</h2>
+    </article>
+
+    <article>
+      <div class="img-container">
+        <img src="https://s2-g1.glbimg.com/hW6PWETmdLBIllrVuecpKvufiHM=/0x0:600x393/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2018/W/H/DhBMAwTmutuvPLaqdZJw/nazare.png" alt="">
+      </div>
+      <h2 style="font-size: 10px;">Tomé resolve questão com cálculo estranho e acerta: professores consideram abrir nova área da matemática.
+"Usei a fórmula de Bhaskara ao contrário, tirei a raiz de um número ímpar, dividi por 0,7 e deu o gabarito", explicou o aluno com confiança."</h2>
+    </article>
+
+    <article>
+      <div class="img-container">
+        <img src="https://nitrogames.com.br/wp-content/uploads/2024/04/Pokemon-Showdown_-O-que-e-1-1280x720.webp" alt="">
+      </div>
+      <h2>Duelo entre João Guilherme e Renan no Pokémon Showdown é tão insano que trava o Wi-fi da escola.</h2>
+    </article>
+
+    <article>
+      <div class="img-container">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxATEhUSEhIQFRAVGBcWFhYVFhAQDxUWFxYWFhUSFRUYHSggGBolHhUXIjEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGhAQGi0gICYtLS0tKy0tLystLS4tLS0tLS4vLS0rKy0wLS0tLS0tLS0tLS0tLS0tLi0tMC0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgIDBAUHAQj/xABIEAABAwIDBAYGBgcGBgMAAAABAAIDBBEFEiEGMUFRBxMiYXGBMlJikaGxFEJygsHCIzNDkqKy8CRTZHOT0RVjo8PS4SWDs//EABoBAAMBAQEBAAAAAAAAAAAAAAADBAUCAQb/xAArEQACAgEDAwMDBAMAAAAAAAAAAQIDEQQhMRIiUTJBYRMzgQUjQnEkkeH/2gAMAwEAAhEDEQA/ANxSTtzCyxcQoIpXljzYHiNLLQsxYBw14qnG8UIkaeBtdbUomLFPJLsI2Tysc3rw+E92vvWh2iwbq9LLIg2jkzRsgIANhbged1J8bLZ4g4Wuzsu8UpOUZbnb3WTleHRllRG7k756fiuh4VShkMr3aBzvg3/2VGxRNzX71Pq3L9FiLR2bEnvdfiu5SxheTl77kWoMEqJpHSZNHG+ugtwHuWbjmFUtOG9fVQQTOBLWyyMAcBvIPDzWJju10VDHnldmmI/R07T2yeBf6je8+S4bjmMT1cz553l0jz4NaODGjg0cAprtQ4vESmnT9azI+mNnKPNG4Gx0uCCHNII0II0I71F6sWJHetF0CbWOExw+Z12Pa50BO9rmgudGPZIBPcWnmpLNFmkPiUzT29bbE31fTwhQU91t5Htjb7StxkRtvxWjxCuud6f6mIMiSpuVFdscTzWjB7LfnzWdPW2BKh2ITFziV1wMrjuX9mcP+kVcMNrh8jQfs37XwutP0l1PWYrWu5TvZ/pnq/yrpnQthWepfOR2Ymm32n9kfDMuTbZm+IVp/wATUf8A7PWfqpZkkaGnXLNQgXi9U6HlS9C8XoXSOT1erxero8Lsa2FGdVr2LOpN6dAXInlb2sCqx6klO/3yBn5lyddcwdufC8Rj/wAPn/03tf8AlXI0jUr9w7o9IRESBwREQAREQAREQAREQB0d8FnLKx1t2Ru/r+tVaeHHcLq5jjrQNB36fgt6XBjx5RThEOZ4IDjl1cRoGjmVOHExxuAOh18e9RLZGWOSCeneQ0zNLCdxsRZbahlfG36JO9r5WR+m03DhwvyOm5Iy+rHsdTjtktU093ea1m3W2r4GClp5XCYem5tssY35Bfe75LEdiwhZJL6gNu9x0aPeubSyFxLnG7iSSTvJOpKRqrMdqH6alN9TE0znuLnuc5x1LnEucTzJO9UIizy8lXRfE52J05bfsF7yRwDI3uN+42t5rtscYFyuedCGEG9RWO3NaIGbrFziHyHxAawffU9xKpDQr9Ku0zdXLM0vBhYrWqNVFSr1ZU3KjmIV+uVvmf8AZW8CYQyX62rvoFrXMuUiW3wKiEkzGn0S4X8L6rlsclg65sBQiloowdJJj1judjo0e7XzXz50kUBhxSsYeMzpB9mX9K34PX0BJVOklsz0R2WgchoFzXp5wmxpqu3acHQSeLO3GfEhzx90LPuj/Idp574OSr1ESEVsqC9CpC9XSOSperxertHJdYs2l3rBYs2m3psBcjo+wsfWR1UP97TVDB4uicB8Vx5dj6LpLVUYO5xynwIsuRVlOY5HxnexzmnxaSD8lxql3J/B1Q9mWURFKPCIiACIiACIiACIiAOgfSJGbnW9yszPe83c4lXJ4jftHyCojhv6Jse/ctvDMs9iw97vQDs3s3zfBXqRzos7jfNq3W97991ewWulimGuU7rjUhZO1vViQCMucD2nOdvLivPcPghu0NSerYzg5znHysAPitAt7tBH2GO9pwHuaStEsvUP9xmhT6EFcpoHyPbGxpc97g1rRvc5xs1o7ySra6b0RYEGl2JTDsx3ZTg37UlrPlHMNBsPaPNqXGLk8I6nNQjlnQ8PoWYfRxUoILmNvIRudK7WR3eL6DuAUaxKuLjvWRi2IF5OqiuKVttBvWvCChHBlbzlllnFsQ+o0+J/Bapqp3m6yKWne9zWMaXPcbNA3k/1x4L3kdwiuJymWy+B1Bc15b1beBk7BPg30j7rLaYDsq2nAc8s6/eXntZDyiZwt6xsfDcpTQxRR/pHl7jwuQLnnbl5ryWyFO1N4Rdiqo6W7Qc8xGpIsG34Ac1yzpuxnO2mp79rtzvHIGzI/wCWTTw5ro030LtPcx4tqXdY8uJv7V7kk/Fc42w2EdVyyVVLUCSR5uYJssbwALNZHIOy4AAAB2XQbyVDcnjgsoS5OVr1XKulkie6OVj2SNNnNeC17TyIOoVsKYqAVSpVQXSZ4z0KoKkKoLtHDLjFl05WIxZUJTYC5E/6PpctTEfaHzUH28purxKtZyqJiPB0jnN+BCluxclpmeIWn6YYsuL1XeYnfvQxu+ZRquIs8o5ZDERFGUhERABERABERABERAE2xl7usIF7XPzWLAHAi1/ipBWYXOXfq79+Zv8Ausb/AIfUNIcYrNBGt2WHjqtnKzyZqzgpiDnS2a0udyHzJ4LHxCtYXEvkjB+0CdO4b1XtljEccf0ent1jyHTyN37tIwRuH9cVA1JbqmpNRHV0ZWWbLGsQbIWtZfq2AgE+k4k3c48r6ady1qKuKNznBrQXOcQAACXEk2AAG8lRNtvLK0sLCNlsxgj6yoZAzQHtPfvEcbfTefAbuZIHFdkrJGMYyGIZYImhjG8mjieZOpJ4klYWzGBNoKbIbGqls6Z2hDbejC08m8eZJ5BYWKYgBcA6rR01XSup8mffb1y6VwjFxOrtoN6jk7rlX6me6w7qhsIxwZFDSPle2Ngu9xsOA5kk8AACSeQXScBwaKjGa+edwsXkWyj1WD6vjv8ADctVsPh4jiNQ4dqS7WfYadT5uHuYOa3TnFzkyEc8kt1jzhGdFKDd7zZjdTz7mjvJ0Wtq8VL3X3cABuA4ALG2hrMpEDTozV/fJbUfdBt4ly08lb1THSm1xowHcXnd5CxJ8F1hY6jiEfYvY7imoiB9HV/2vV+6PiTyVuiryOKiwqCTckknUk6knmVn0syzr5H0GhrzsSXGcNixGLq3hoqmi0Ex0cDwieeMZOns3uOIPGXsLSQQQ4Egg6EEaEEc12bZlhfMwbhe7jyaNXHyAK5BidV1s0soFhJI99uWZxdb4qDqyV6yhVSSXuY69C8QLpEWCsL1eBehdo5aLjFkwrGYsmJOiKkSvZWS0rPEfNV9OcVsSDv7ynhd8Cz8iwtn32e3xW26dI7z0cvB9I1vmySS/wDOF1qfQjin1s5miIoioIiIAIiIAIiIAIiIAmUlbJ6zveVlYXUVDyWxnT62Y9gDmbrEkoXesFRjrXxUoaw3D3dtw4Dg0+P9b1rWS6YtmfCKk8GRi+0EbGvjD2zPILSGtaIG3433u8lCUWTh1BLPII4mlzzwG4DiSeA71mTm5vctjFQRZijc4hrQXOJsAAS4k7gAN5XWdj9mGUDevnymsI0GhbTgjUA8ZOZ4bhzWLgeHU+HtzEtkqyNX8GX3ti/8t57lhYji75DqdOSso0+O6f8Aoluucu2HHk2uL45muGnTnxKjk05KtueSqC1WCIxSKHlZGFURmlbGNLnU+q0C7ne4HzsrBapFsRGDJMfrCLTwL2XPy9659xjexNqxrWZY2CzGNaxo32DQAq6aQRxvnP1B2QdxedGD3kE9wKplaZAx4+s1t/tDsuHvBWJtNJlaynH1e2/7ZHZb5NP8Z5JvVsokf025EbcXOdxJJ1O8knefFabH6rM/q2nsR3b3F/13e8W+7fitzWTdTGX/ALR12x8weL/ug+8tUSIXF1q4LKKG3kqaVm0zlhMatrhVE6RwA3cTwA5rI1Fp9N+naZtom+B1EVNEx8ouZgWkcRG4FpI8Rdcax/CH0s74X621Y8CzZIz6Eje4j3G43grpz2CrqMucR00LbOkOjWsYN/jYXvw38gYJtxtBFVStbAwspoQWRZiTI4Egl7uVyL27zc6qSqTf9Dv1WquHS2+/x8f8I2pHs5hUT4nSyMz9osDSXtaMoaSeyQTfMBv4FRxTrY4jqWNO5zpD/KPyp+cGbp61OeGVx4RQvFjAWd8ckocP3y4fBY1ZsSSM1LKH/wDLltFJ4Nf6DvPKppBs2/V9uxoQeBuAfxWbR0OQ62VcIxkI1CUeDjNRSyRPMcjHMkG9rgWuHkeHeq4l3DExh1RGIqmFrwPRcOxKy+8seNW+G48QVzvaLY7qGunppTNTN1cHANqIh6zwNHt9oWtxAGq66HEi+onsa3B3WcFJemYZqXDJPYnYT4GIgfEqLYYdQph0ltzYNRv4sqHM/ejJ/Iur1+3+Qr9ZyRERQFQREQAREQAREQAREQBOn4dM51mkO8CtZtJUsjZ9GaS55IMjuAI1DQpBJiTRZsEfW1RFnOabRMvxceHhv0WppsIhg7cxEs++29jTzPM/1otCyTs7YflkUMR7pfg1OC7PPm7bz1cPrH0ndzR+PzUnjroaZnVUzco+s46yP73H8Ny1tXiD38dPgsQaruumMPlnk5ynzwZUtS5xuSjG3VEUa2NLSE7gU8W2kW44VkNpbrcxYPkGaZ0cTecr2RA+Gci/kr0WI4Qw2kr4rj1I6mUfvNZlPkV47IR5ZylKXpRojQHkpJsJhL+tlfbstiIPeXPZYfwk/dXk+12AxNuJKqd3qxw9WPMyEWHvU36MsZirqSaSGnFOBI6Nt39c5zhG1wc45QPrjSyRLUw/jud/SsxusFGEQsjd1L3N612Z8LDvNhd3lpcDjZ1uK1VThTnSG+8kkk+8uPzWBiDyZs7XHrA6+bUODgdDrre44qY1NbAKKSpqXNhBHVPfZxjvIQzMA0Ej0rchf3eWWOG4+qtYTORY5KZZLgERjssHJvM953nx7lqvo66CzBaSXWGso3j2Z4SR4tzXHmFnjYeONvWzytEe8ZSHZvA8VDZdI3tPTp9u78e5BsEwCSc6CzG6uedGNHMkrewUfXZoKZwjpIgTUVb7CNoAuSSSBbdYb9RewWXjlTEGBszvo1E39mP17/akaNRvFhv198dxWCsqoO03/h2DBwyte0monIBynq9DI8kF2W7WDfc5cyife8vg1LLvoRUa1mT4Xj5fz49l8mTLKKonDMHDpGuH9oqn6RhhvmAJaDbm7S9rAWJvjwGioc0VKxs8voyVMzQ9r94cyOPd1Zud++w36LDmxsMgNLSM+j0p9MB2aaY+tNJ9Y9ws3hZabrLLiU87Q2R3RpMP6up7pePBfrdnaWYl0Egp3nfHJnfT7/qSNBe0ey4O+0pZslsk5ohD56fKA4nqy+R57bj2QWgbuJPkoaJ1JaPEnQx5ge3kDG+yXN7TvIZvMhPrbfJPZp6oOU6tnj8ExxPaDQQx6RR9lvEm2mYniStJPXk8VHG1ytzVy0KcmPqIQXBtpai/FbHAJ/0rW7w7slp1DmnRzSOIIJHmog2qN1MNh6YyVMXK9z5aq9PbcxrkQZ1OIp5YhciOWSME7yGPc0E9+il210fWYAT/AHVTE/3tez86h8tQJJ5ZBuklkePB73OHzU1xDtYDWj1TA7/rxg/AqazepncfuI40iIs8rCIiACIiACIiACIiAJxNiTWt6uFoYzu0J8VrXPJ3qgBX4oSdwWwljZGeWw1ZtDQPkcGsaSTwAupNsvsTNUEFwyx8SVh9Ie0UNNmw+g0tpUTj9Y88Ymu4N528OaXZdGv+z2EXN4RrayrpaXsyO62Yfs4yMrTyfJuHgLlaWs2wqnXbEWwM5RDK+3fIe1fwIUeRQzvnL3Ko0xj8lcsrnEucS5x3kklx8SVQiJI0L6L6IAIsGjfuzvlf5h5j/wC2F86L6RpG/RcLpYSMrhCwuHEOcM7wfvOKdRHqmT6mWIGna/r6x1zYE3cR8Vd6Zq5rMJETRZr5oowO5rXyE+9g9612yzi6V7u9a3p0rLMo6cHhLM4cdS1jD/DIn6rZHlL4RyRTHo/2hxCN/wBEpTE8Sm4ZNmdHG4AkzR2ILXAA+jcm24kBQ5ZWF18kE0c8RtJG4PadbXBvY8wdxHEEqFlcJdLTO2NZSUQE1S8Vdc02vZgEZNy1rI7lse70jmdqfQLlDdoMbnqpDJM4n1WAu6tgsBZjSTbcPFbPaJkb8lRELQzsbKwadkOFyw24tN2nvaoxMVBLqbwfa011QrVsXltcvksvcrZK9cqU2ECS67Jdpoc72t5kDwHE+QW0xWa7w0fVuT4u1t5AD4rFw+QRgyGxeQWxt379HSO7gNAONzyKx8xJudSdSeJPNVVx3M+y3EWvJezK29yXVICvrRj3yL9Ky5XStlf0FNU1ZH6mCRzftZCQPfYeageFwXIU423k+jYL1e59RJGzvtfrHeVoyPNPseIGdLeSRyqg0sOS6LhXbwrEGf4dz/3LP/Kuc0h1XSdgmCVlRAf21PNH+9G4LiSzWwziSOJoiLNLQiIgAiIgAiIgAiIgCdYbg75CLBT3Atm4YgHy2J5K5AY4hoBdYdZihPFbODHcmzZ7VbVfRqSR8dgQMkYHru0B8t6+f5HlxLiSXEkknUknUkqddI1beKCLmXPPl2R8yoGs3UPvx4NDTRxDPkIiJBQEREAb3YfBfpldBARdhdmk326pnbkueFwCPEhdd6RMX7WUHuWp6GMG6mlmr3ixlvFET/dsN5HDuLwB/wDWeasR07q6uy/smHO88A0f7q/SxwnIhvl1Tx7IkGx9AWxtJHafrbjquYdKeLCoxGXKQY4bQMP+Xo894Ly8+BC6ntXjgoaV9QLCV14qZvHOR+sA5MHa5Xyjivn5J1M8ywO0626giIpig6LsnU9bhroybupprDujmBc0fvslP3lq6oaq70ayZhVw8XRNkHjHI1tvG0p9yYhGWuIIIIOoIsR4hKdeZZN7San/ABVF+zZryiqXtk2NYqdwYFeDVbCvNKphAistKSFVG3VFepm3KrhEzrZkl2Wo80jfFXOmuvGelpgdI2OlcOF3kMZ5/o3/ALy3WxlMAQ4kBo1c46BrQLucTwAAJXLdqcZ+l1k1Rrke60YO8RtAbGLcDlAJ7yV5c90iWveTZj0xXQ+jWpy1UfK4HvXOYCpbslPlmYeTgvYbrB7Mgu0FH1NVUQgWEc0rB4Ne5o+S16mHS3TZMVqdLB5ZKO/rI2PJ95Kh6yy5BERABERABERABERAHWJq0lY/WXWKHK6wrbMjBq9vqcmGCUbmlzD4mxHyUIXUnOjfG6GUXjfv5g8HDvCh9fslM0kwkSs4WIEgHe0/gs/UUy6nJcFtFsenpZHUWa/CKkGxgnv/AJb/APZZFPs5WP1ED2jnJaFvveQpellPUjVLbbL4DLW1MdNFoXntOPoxsGr5XdwGvfoN5W1otk2A3nmv7EA6x57jI6zW+IzKXYXRyBhhpo208TrB5bd88lt3WSHV3gLAcAFRXppy52Ez1EY8bkr2oxiFkUeHUAzBjWxi2ujRbfx5k8SSs/B8GioaR75ntYLdZUSngBuaOJ5ADUkqjBsJpMPhNVVPbGwb3v1e4+qwb3OPIarkvSN0gS4i/q4w6KiYbsjJGd54SS20LuQ3C/HeW2WqtdESeut2PL4NXtxtO6vqDJYsgYMkEZ+owHebaZ3HUnnpuAUdRFC3kuSxsEREHp1/oaoWxtbNlBlm60ZrXIjaMrWA8LvBJ55W8loccjOdxdcuJJJO8km5JUm6B65sh6hx/SQOL2jS5ikte32X7/8ANCwds6TJNIOTj80+EUx1dyjlEPKKp4Xlk5VnjtAVYKoXoToxJp2FYK2eFw5iFrGC5Uv2eijijfUzX6mFpe7cC62jWNv9ZziGjvcE1YisslslnZFO3eLfRaNtIw2nqW3ktvZT33dxe4W+y13MLmjFdxjE5KmeSolt1kjrm3otFgGsb7LWgNHcArLFF1OUssbGHTHBlwlSHA5LPHiFHIit3hbu0FRWxczZ9NkH9opZ+EtMwfejc5p+BaucrqvSzFnw/D5vUdLEfvBrx/KVypZ9ixNoqreYoIiLg7CIiACIiACIiAOhBy96xUmIr1sDjwK2zJPQ5Xo2FZVFhMrzo0nyW7bgrYxmmliib7bmhDklyzzng0rGv9Z3vKrZR3O4k9+qyanaDCYd9QZDyiaXA/e3LT1nSXEzSlpBfg+c5rfcbp8UmWprj7ncabJexKsMwB79cuVg1Lj2WgcySqMS24w2gBbDarqRwYbU7T7Un1vBt/ELlOO7U1tXpPM9zOEYsyEcuw2w8zqtMpLNVKWy2Ka9KlvLc3O0+01XXy9bUyZiLhjB2YowfqsbwG7XebC5K0yIpSsIiIAIiIAk/RrjBpcSppb2Y6QRv1sMkhyOJ8Lh3i0LqfSfRZZ3G2ju17964MCvovbCYVNLT1A3yRMk8nsa/wDMqdN6sCLpdOGcjmbqrSzKyOxWIVd0i+spXoCK5GxdJHLkZeHU+ZwWd0j1nU08FE02L/7RN4athYf43W+wVsNlaHPKxvMgfFQXbLEhUVtRM0gsLy1lt3VxgRx/wsak6mWIqPk8pXVPPg1IV5isBXmKWJQzJiW3w92oWniW0ojqFTATInG2EXW4Fm4wzxu8MwdH+ZceXa4I+twevj32i6wDvjcH/guKKTULFjHUPsCIiQOCIiACIiACIiAJkNs4x+w+IXp29cPQp4weZOb4WUNXic7rPIr6FfgklbtxXyCwl6tvKMBnx3/FR+ed7zme5znc3Eud7yraJTbfIxRS4CIi8PQiIgAiIgAiIgAiIgAu84fUdZg1C/8A5ZZ/pPfH+RcGXbtl3XwOl7nTj/quP4qjS/cRNqvtkQxIalaxy2OJO7RWtctNk0XsegLLpmLGYthRtQgkyUYJJ1MU843xQyyN+02N2T+Ky461dYxh2TCqtwNi5sTP3po7jzaCuThQ6p9+B+lXa38lYV1ishXWJcRzMmNbGkK1saz6UqiAmR1Lo+AkbNCd0kUjfe0rhr2kEg6EGx8Quz9Gs9qhg4HT3rlm1lKYq2pj9WaS3gXEj4EJGqXcmd6d7NGpREUpQEREAEREAEREAerxEXTAIiLkAiIgAiIgAiIgAiIgAiIgAu0bJu/+Dh/zZ/5gvET9N91E+q+2yIV7tSsFeotRkseC4xbKhGqIvUcyNptq8twqw/aVETT4Bkr/AJgLlwRFnaj7jK9N9tFQV1qIuYjGX41m0xRE+AmRNdipsszD3hR3pdpsmK1B4Pyv97QPwREvVcI6o5ZDURFGUhERABERABERAH//2Q==" alt="">
+      </div>
+      <h2>Amigo vira lenda da escola após fazer 100 agachamentos por dia — e quase quebra a perna no processo</h2>
+    </article>
+  </main>
+
+  <footer>© Luana, Paz e Tomé - Direitos reservados</footer>
+</body>
+</html>
